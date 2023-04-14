@@ -1,58 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Present, Past and Future</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="english__wrapper">
-        <a href="./index.html"><<< To the main page</a>
-        <a href="./other-grammar.html">Other Grammar</a>
-      </div>
+import React from 'react';
 
+const EnglishTensesPage = () => {
+  return (
+    <div class="wrapper">
       <h1>About Present, Past and Future</h1>
       <h2>Present</h2>
 
       <h3>Regular, schedule, obligation, responsibility</h3>
-      <p><b>V(s)</b> - <i>do/does</i> - PRESENT SIMPLE</p>
+      <p>
+        <b>V(s)</b> - <i>do/does</i> - PRESENT SIMPLE
+      </p>
       <p>обычно, я читаю</p>
 
       <h3>Right now, this period, temporary action</h3>
-      <p><b>am/is/are + Ving</b> - PRESENT CONTINUOUS</p>
+      <p>
+        <b>am/is/are + Ving</b> - PRESENT CONTINUOUS
+      </p>
       <p>я сейчас читаю</p>
       <p>this semester</p>
 
       <h2>Past</h2>
 
       <h3>Narrative, Activity is finished, time phrase, but not always</h3>
-      <p><b>Ved/V2</b> - <i>did</i> - PAST SIMPLE</p>
+      <p>
+        <b>Ved/V2</b> - <i>did</i> - PAST SIMPLE
+      </p>
       <p>я прочитал</p>
 
       <h3>
         Narrative, The events taking place around the time of the story, Story
         background
       </h3>
-      <p><b>was/were + Ving</b> - PAST CONTINUOUS</p>
+      <p>
+        <b>was/were + Ving</b> - PAST CONTINUOUS
+      </p>
       <p>я читал</p>
 
       <h3>
         Narrative, An action that happened before something else we already
         talked about
       </h3>
-      <p><b>had + Ved/V3</b> - PAST PERFECT</p>
+      <p>
+        <b>had + Ved/V3</b> - PAST PERFECT
+      </p>
       <p>я читал уже тогда</p>
 
       <h3>Activity is still taking place or affecting the present situation</h3>
-      <p><b>have/has + Ved/V3</b> - PRESENT PERFECT</p>
+      <p>
+        <b>have/has + Ved/V3</b> - PRESENT PERFECT
+      </p>
       <p>focus on results - я закончил читать</p>
       <p>Я в этой компании работаю 5 лет - still taking place</p>
 
       <h3>Activity is still taking place or affecting the present situation</h3>
-      <p><b>have/has + been + Ving</b> - PRESENT PERFECT CONTINUOUS</p>
+      <p>
+        <b>have/has + been + Ving</b> - PRESENT PERFECT CONTINUOUS
+      </p>
       <p>часто с вопросом how long</p>
       <p>focus on duration - я читаю уже два года</p>
 
@@ -68,28 +71,44 @@
 
       <h2>Future</h2>
       <h3>Спонтанность, неуверенность</h3>
-      <p><b>will + V</b> - FUTURE SIMPLE - я прочитаю</p>
+      <p>
+        <b>will + V</b> - FUTURE SIMPLE - я прочитаю
+      </p>
 
       <h3>Definite plans / Questions about plans</h3>
       <div>
-        <p><b>am/is/are + going to + V</b></p>
-        <p><b>am/is/are + Ving</b> - PRESENT CONTINUOUS</p>
+        <p>
+          <b>am/is/are + going to + V</b>
+        </p>
+        <p>
+          <b>am/is/are + Ving</b> - PRESENT CONTINUOUS
+        </p>
       </div>
 
       <h3>Obligation</h3>
-      <p><b>have to + V</b></p>
+      <p>
+        <b>have to + V</b>
+      </p>
 
       <h3>Less certain plans</h3>
-      <p><b>will + probably/possibly + V</b></p>
-      <p><b>probably won`t + V</b></p>
-      <p><b>be thinking of + Ving</b></p>
-      <p><b>might/may (possibly) (not) + V</b></p>
+      <p>
+        <b>will + probably/possibly + V</b>
+      </p>
+      <p>
+        <b>probably won`t + V</b>
+      </p>
+      <p>
+        <b>be thinking of + Ving</b>
+      </p>
+      <p>
+        <b>might/may (possibly) (not) + V</b>
+      </p>
 
-      <!-- * Future time clauses -->
+      {/* Future time clauses */}
       <h2>Future time clauses</h2>
       <p>
-        Сложенное предложение состоит из двух clauses.<br />
-        Я должен прибрать в квартире, до того как моя мама прийдет
+        Сложенное предложение состоит из двух clauses.
+        <br />Я должен прибрать в квартире, до того как моя мама прийдет
       </p>
       <p>Правило:</p>
       <ol>
@@ -108,7 +127,7 @@
           </ul>
         </li>
       </ol>
-      <!-- * Conditional -->
+      {/* Conditional */}
       <h2>Conditional</h2>
 
       <ul>
@@ -436,5 +455,9 @@
         </tbody>
       </table>
     </div>
-  </body>
-</html>
+  );
+};
+
+export default EnglishTensesPage;
+
+export const Head = () => <title>English tenses</title>;
