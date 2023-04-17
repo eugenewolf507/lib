@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>English Grammar</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="english__wrapper">
-        <a href="./index.html"><<< To the main page</a>
-        <a href="./tenses.html">Tenses</a>
-      </div>
+import React from 'react';
+import Layout from '../components/layout';
 
-      <h1>Other Grammar</h1>
-
-      <!-- * Be used to / Get used to -->
+const EnglishOtherPage = () => {
+  return (
+    <Layout pageTitle="Other Grammar">
+      {/* Be used to / Get used to */}
       <h2>Be used to / Get used to</h2>
       <h3>Be used to</h3>
       <p>
@@ -27,7 +15,7 @@
       <h3>Get used to</h3>
       <p>Shows a change from being difficult to becoming normal or easy</p>
 
-      <!-- * Talking about rules -->
+      {/* Talking about rules */}
       <h2>Talking about rules</h2>
       <p>Must/mustn't can sound too direct and rude. So we can use:</p>
       <ul>
@@ -37,12 +25,16 @@
         <li>be (not) supposed to</li>
       </ul>
 
-      <!-- * Comparisons -->
+      {/* Comparisons */}
       <h2>Comparison</h2>
       <h3>Comparative adjectives</h3>
       <ul>
-        <li>One syllable - add <i>-er</i></li>
-        <li>Two syllable - add <i>-y</i> or <i>-ier</i></li>
+        <li>
+          One syllable - add <i>-er</i>
+        </li>
+        <li>
+          Two syllable - add <i>-y</i> or <i>-ier</i>
+        </li>
         <li>Two and three syllables - use more</li>
       </ul>
       <h3>Big and small difference</h3>
@@ -55,8 +47,10 @@
         <li>the + noun + of - twice the size of ..</li>
         <li>as + adjective + as - twice as big as</li>
       </ul>
+    </Layout>
+  );
+};
 
-      <!-- * !!! -->
-    </div>
-  </body>
-</html>
+export default EnglishOtherPage;
+
+export const Head = () => <title>English other</title>;
