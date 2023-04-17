@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 
 const QuestionsJSPage = () => {
   return (
-    <Layout pageTitle="JS">
+    <Layout pageTitle="Articles">
       <p>JS</p>
     </Layout>
   );
@@ -11,4 +11,4 @@ const QuestionsJSPage = () => {
 
 export default QuestionsJSPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>articles</title>;

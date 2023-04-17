@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Layout from '../components/layout';
+import Seo from '../components/seo';
 
 const IndexPage = () => {
   return (
-    <>
-      <h1>MyLib</h1>
+    <Layout pageTitle="MyLib">
       <ul>
         <li>
           <Link to="/articles">Articles</Link>
@@ -25,10 +26,10 @@ const IndexPage = () => {
           <Link to="/questionsReact">Questions React</Link>
         </li>
       </ul>
-    </>
+    </Layout>
   );
 };
 
 export default IndexPage;
 
-export const Head = () => <title>MyLib</title>;
+export const Head = () => <Seo title="Home Page" />;

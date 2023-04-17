@@ -1,9 +1,9 @@
 import React from 'react';
+import Layout from '../components/layout';
 
 const EnglishTensesPage = () => {
   return (
-    <div class="wrapper">
-      <h1>About Present, Past and Future</h1>
+    <Layout pageTitle="About Present, Past and Future">
       <h2>Present</h2>
 
       <h3>Regular, schedule, obligation, responsibility</h3>
@@ -454,7 +454,7 @@ const EnglishTensesPage = () => {
           </tr>
         </tbody>
       </table>
-    </div>
+    </Layout>
   );
 };
 

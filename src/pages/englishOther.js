@@ -1,10 +1,9 @@
 import React from 'react';
+import Layout from '../components/layout';
 
 const EnglishOtherPage = () => {
   return (
-    <div class="wrapper">
-      <h1>Other Grammar</h1>
-
+    <Layout pageTitle="Other Grammar">
       {/* Be used to / Get used to */}
       <h2>Be used to / Get used to</h2>
       <h3>Be used to</h3>
@@ -48,7 +47,7 @@ const EnglishOtherPage = () => {
         <li>the + noun + of - twice the size of ..</li>
         <li>as + adjective + as - twice as big as</li>
       </ul>
-    </div>
+    </Layout>
   );
 };
 

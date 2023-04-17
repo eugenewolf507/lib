@@ -1,9 +1,9 @@
 import React from 'react';
+import Layout from '../components/layout';
 
 const IndexPage = () => {
   return (
-    <>
-      <h1>HTML CSS</h1>
+    <Layout pageTitle="HTML CSS">
       <h2>1 Новые теги html5 </h2>
       <h3>Семантическая верстка</h3>
       <p>header footer main nav</p>
@@ -28,7 +28,7 @@ const IndexPage = () => {
         Video -парный, аналогичные атрибуты + width, height, autoplay, poster
         ogv, mp4, flv, webm
       </p>
-    </>
+    </Layout>
   );
 };
 
